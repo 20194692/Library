@@ -1,7 +1,16 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Search.aspx.cs" Inherits="Library.Search" Theme="" %>
-
+<%@ Import Namespace="System.Data.SqlClient" %>
 <!DOCTYPE html>
-
+<script runat="server">
+    protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+        SqlConnection conn = new SqlConnection();
+        conn.ConnectionString = "";
+        conn.Open();
+        conn.Close();
+        
+        }
+</script>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>

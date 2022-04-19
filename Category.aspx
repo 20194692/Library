@@ -20,7 +20,7 @@
         <p>
             <asp:ImageButton ID="ImageButton1" runat="server" BorderColor="#663300" BorderStyle="Solid" Height="169px" ImageUrl="~/music_islam_1.jpg" Width="194px" />
             <asp:ImageButton ID="ImageButton2" runat="server" BorderColor="#FFFF66" BorderStyle="Groove" Height="177px" ImageUrl="~/bio.jpg" style="margin-left: 190px" Width="194px" />
-            <asp:ImageButton ID="ImageButton3" runat="server" BackColor="Black" BorderColor="#3333FF" BorderStyle="Solid" Height="182px" ImageUrl="~/business.jpg" style="margin-left: 190px" Width="194px" />
+            <asp:ImageButton ID="ImageButton3" runat="server" BackColor="Black" BorderColor="#3333FF" BorderStyle="Solid" Height="182px" ImageUrl="~/business.jpg" style="margin-left: 190px; margin-right: 1px;" Width="194px" />
             <asp:ImageButton ID="ImageButton4" runat="server" BorderColor="#CC3300" BorderStyle="Solid" Height="190px" ImageUrl="~/comics.jpg" style="margin-left: 190px" Width="170px" />
         </p>
         <p style="height: 35px">
