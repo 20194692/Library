@@ -1,16 +1,15 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Search.aspx.cs" Inherits="Library.Search" Theme="" %>
 <%@ Import Namespace="System.Data.SqlClient" %>
 <!DOCTYPE html>
-<script runat="server">
-    protected void btnSubmit_Click(object sender, EventArgs e)
-        {
-        SqlConnection conn = new SqlConnection();
-        conn.ConnectionString = "";
-        conn.Open();
-        conn.Close();
-        
-        }
-</script>
+<nav>
+    <ul class="navbar">
+        <li><a href="home.aspx" class="nav-item">Home</a></li>
+        <li><a href="Category.aspx" class="nav-item">Discover</a></li>
+        <li><a href="Search.aspx" class="nav-item">Search</a></li>
+        <li><input id="Text2" placeholder="Search" style="border-style: solid; border-width: thin" type="text" /></li>
+        <li><input id="Submit2" style="border-style: solid; border-width: thin; font-family: forte" type="submit" value="submit" /></li>
+    </ul>
+</nav>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
@@ -24,15 +23,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div style="height: 82px; background-color: #CCFFFF;">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:HyperLink ID="HyperLink1" runat="server" Font-Names="Tw Cen MT Condensed" Font-Size="20pt">Home</asp:HyperLink>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:HyperLink ID="HyperLink2" runat="server" Font-Names="Tw Cen MT Condensed" Font-Size="20pt">Profile</asp:HyperLink>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input id="Text1" placeholder="Search" style="border-style: solid; border-width: thin" type="text" /><input id="Submit1" style="border-style: solid; border-width: thin; font-family: forte" type="submit" value="submit" /></div>
+
     </form>
 </body>
 </html>

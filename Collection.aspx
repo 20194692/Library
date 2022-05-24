@@ -1,22 +1,27 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Collection.aspx.cs" Inherits="Library.Collection" %>
 
 <!DOCTYPE html>
-
+<nav>
+    <ul class="navbar">
+        <li><a href="home.aspx" class="nav-item">Home</a></li>
+        <li><a href="Category.aspx" class="nav-item">Discover</a></li>
+        <li><a href="Search.aspx" class="nav-item">Search</a></li>
+        <li><input id="Text2" placeholder="Search" style="border-style: solid; border-width: thin" type="text" /></li>
+        <li><input id="Submit2" style="border-style: solid; border-width: thin; font-family: forte" type="submit" value="submit" /></li>
+    </ul>
+</nav>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
 </head>
 <body>
     <form id="form1" runat="server">
-        <h1 style="text-align: center; font-size: 70px; color: rgb(0, 0, 0); font-family: 'Tw Cen MT Condensed'; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; background-color: #CCFFFF;">Collection</h1>
         <p>
             &nbsp;</p>
-        <p>
-            &nbsp;</p>
-        <p>
-            &nbsp;</p>
-        <p>
-            &nbsp;</p>
+     
+
+        <p style="position: relative; top: -347px; left: 1280px; width: 76px;">
+            <input id="Submit1" style="border-style: solid; border-width: thin; font-family: forte" type="submit" value="submit" /></p>
         <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 30px">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Your wishlist is empty.</p>
         <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 30px">
