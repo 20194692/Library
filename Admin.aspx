@@ -10,48 +10,75 @@
             height: 49px;
         }
         .auto-style2 {
-            width: 168px;
+            width: 232px;
+        }
+        .auto-style3 {
+            height: 29px;
+        }
+        .auto-style4 {
+            width: 232px;
+            height: 29px;
+        }
+        .auto-style5 {
+            height: 1204px;
         }
     </style>
 </head>
 <body>
 <form id="form1" runat="server">
         <div class="container">
-            <div class="left-pane">                
-                <img width="320" src="/res/backdrop-coll.jfif" alt="Alternate Text" />  
-                <asp:CreateUserWizard ID="CreateUserWizard1" runat="server" OnCreatedUser="CreateUserWizard1_CreatedUser" Height="196px" Width="289px">
-                    <WizardSteps>
-                        <asp:CreateUserWizardStep runat="server" >
-                            <ContentTemplate>
-                                <table class="form-table">
+            <div class="auto-style5" style="background-image: url('books-shelf-old-wooden-73725517.jpg')">                
+                <img width="320" src="add.png" alt="Alternate Text" />  
+                <table class="form-table">
                                     <tr>
                                         <td align="center" colspan="2" class="auto-style1">
-                                            <h1 class="form-title">Add a Book</h1>
+                                            <h1 class="form-title" style="background-color: #FFFFFF">Add a Book</h1>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td align="right">
+                                        <td align="right" class="auto-style3" style="background-color: #FFFFFF">
                                             Book name</td>
-                                        <td class="auto-style2">
+                                        <td class="auto-style4" style="background-color: #FFFFFF">
                                             <asp:TextBox ID="bookName" runat="server"></asp:TextBox>
                                         </td>
                                     </tr>
-                                                                        <tr>
-                                        <td align="right">
+                                    <tr>
+                                        <td align="right" class="auto-style3" style="background-color: #FFFFFF">
                                             Price</td>
-                                        <td class="auto-style2">
+                                        <td class="auto-style4" style="background-color: #FFFFFF">
                                             <asp:TextBox ID="price" runat="server"></asp:TextBox>
                                         </td>
+
                                     </tr>
+                    <tr>
+                         <td align="right" class="auto-style3" style="background-color: #FFFFFF">
+                             Author</td>
+                         <td class="auto-style4" style="background-color: #FFFFFF">
+                             
+                             <asp:TextBox ID="author" runat="server"></asp:TextBox>
+                             
+                         </td>
+                    </tr>
+                    <tr>
+                        <td align ="right" style="background-color: #FFFFFF">
+
+                        Image</td>
+                        <td class="auto-style2">
+
+                            <asp:FileUpload ID="image" runat="server" />
+
+                            </td>
+
+                    </tr>
                                     <tr>
-                                        <td align="right">
+                                        <td align="right" style="background-color: #FFFFFF">
                                             Categories</td>
-                                        <td class="auto-style2">
-                                            <asp:DropDownList ID="cateDrop" runat="server" OnSelectedIndexChanged="cateDrop_SelectedIndexChanged">
-                                                <asp:ListItem>Art &amp; Muisc</asp:ListItem>
-                                                <asp:ListItem>Biographies</asp:ListItem>
-                                                <asp:ListItem>Comics</asp:ListItem>
-                                                <asp:ListItem>Business</asp:ListItem>
+                                        <td class="auto-style2" style="background-color: #FFFFFF">
+                                            <asp:DropDownList ID="category" runat="server">
+                                                <asp:ListItem>Drama</asp:ListItem>
+                                                <asp:ListItem>Comedy</asp:ListItem>
+                                                <asp:ListItem>Romantic</asp:ListItem>
+                                                <asp:ListItem>Fantasy</asp:ListItem>
                                             </asp:DropDownList>
                                         </td>
                                     </tr>
@@ -62,11 +89,6 @@
                                         </td>
                                     </tr>
                                 </table>
-                            </ContentTemplate>
-                        </asp:CreateUserWizardStep>
-                        <asp:CompleteWizardStep runat="server" />
-                    </WizardSteps>
-                </asp:CreateUserWizard>
             </div>
             <div class="right-pane">  
             </div>

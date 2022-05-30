@@ -16,14 +16,19 @@
     protected void sumbit_Click(object sender, EventArgs e)
     {
         SqlConnection conn = new SqlConnection();
-            conn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|users.mdf;Integrated Security=True";
-            string strInsert = string.Format("INSERT INTO members Values('{0}','{1}','{2}','{3}','{4}')", fname.Text,lname.Text,username.Text,password.Text,email.Text);
+        conn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|users.mdf;Integrated Security=True";
+        string strInsert = string.Format("INSERT INTO member Values('{0}','{1}','{2}','{3}','{4}')", fname.Text,lname.Text,username.Text,password.Text,email.Text);
 
-            SqlCommand cmdInsert = new SqlCommand(strInsert, conn);
+        SqlCommand cmdInsert = new SqlCommand(strInsert, conn);
 
-            conn.Open();
-            cmdInsert.ExecuteNonQuery();
-            conn.Close();
+        conn.Open();
+        cmdInsert.ExecuteNonQuery();
+        conn.Close();
+    }
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
     }
 </script>
 
@@ -77,14 +82,28 @@
             height: 29px;
             width: 242px;
         }
+        .auto-style13 {
+            height: 225px;
+        }
     </style>
     </head>
 
 <body>
     <form id="form1" runat="server">
         <div class="container">
-            <div class="left-pane">                
-                <img width="320" src="/res/backdrop-coll.jfif" alt="Alternate Text" />
+            <div class="left-pane" style="background-image: url('books-shelf-old-wooden-73725517.jpg')">                
+                &nbsp;&nbsp;
+                <br />
+                <img width="320" src="welcome.jfif" alt="Alternate Text" class="auto-style13" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:HyperLink ID="login" runat="server" Font-Names="Forte" Font-Size="X-Large" ForeColor="White" NavigateUrl="~/login.aspx">Login</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:HyperLink ID="books1" runat="server" Font-Names="Forte" Font-Size="X-Large" ForeColor="White" NavigateUrl="~/Books.aspx">Books</asp:HyperLink>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
             </div>
             <div class="right-pane">
                 
@@ -137,8 +156,7 @@
                             <asp:RequiredFieldValidator ID="passnamevalidation" runat="server" ControlToValidate="password" ErrorMessage="This field is required"></asp:RequiredFieldValidator>
                         </td>
                         <td>
-                            <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ErrorMessage="password has to be at least 6 characters and not more than 18 characters" ValidationExpression="[6,18]"></asp:RegularExpressionValidator>
-                        </td>
+                            &nbsp;</td>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>

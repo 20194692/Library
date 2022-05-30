@@ -67,10 +67,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="home.aspx" />
     <Content Include="Admin.aspx" />
-    <Content Include="App_Data\Cate.mdf" />
-    <Content Include="App_Data\Cate_log.ldf">
-      <DependentUpon>Cate.mdf</DependentUpon>
+    <Content Include="App_Data\booklist.mdf" />
+    <Content Include="App_Data\booklist_log.ldf">
+      <DependentUpon>booklist.mdf</DependentUpon>
     </Content>
     <Content Include="App_Data\creditcard.mdf" />
     <Content Include="App_Data\creditcard_log.ldf">
@@ -80,72 +81,26 @@
     <Content Include="App_Data\users_log.ldf">
       <DependentUpon>users.mdf</DependentUpon>
     </Content>
-    <Content Include="bio.jpg" />
-    <Content Include="biographies.aspx" />
-    <Content Include="Business.aspx" />
-    <Content Include="business.jpg" />
-    <Content Include="Checkout.aspx" />
-    <Content Include="Collection.aspx" />
-    <Content Include="Comics.aspx" />
-    <Content Include="comics.jpg" />
-    <Content Include="home.aspx" />
+    <Content Include="books-shelf-old-wooden-73725517.jpg" />
     <Content Include="login.aspx" />
-    <Content Include="music_islam_1.jpg" />
-    <Content Include="Search.aspx" />
     <Content Include="signup.aspx" />
     <Content Include="Web.config" />
-    <Content Include="Category.aspx" />
-    <Content Include="ArtMusic.aspx" />
+    <Content Include="Books.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin.aspx.cs">
-      <DependentUpon>Admin.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin.aspx.designer.cs">
-      <DependentUpon>Admin.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="biographies.aspx.cs">
-      <DependentUpon>biographies.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="biographies.aspx.designer.cs">
-      <DependentUpon>biographies.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Business.aspx.cs">
-      <DependentUpon>Business.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Business.aspx.designer.cs">
-      <DependentUpon>Business.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Checkout.aspx.cs">
-      <DependentUpon>Checkout.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Checkout.aspx.designer.cs">
-      <DependentUpon>Checkout.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Collection.aspx.cs">
-      <DependentUpon>Collection.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Collection.aspx.designer.cs">
-      <DependentUpon>Collection.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Comics.aspx.cs">
-      <DependentUpon>Comics.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Comics.aspx.designer.cs">
-      <DependentUpon>Comics.aspx</DependentUpon>
-    </Compile>
     <Compile Include="home.aspx.cs">
       <DependentUpon>home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="home.aspx.designer.cs">
       <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
     </Compile>
     <Compile Include="login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
@@ -155,26 +110,12 @@
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Category.aspx.cs">
-      <DependentUpon>Category.aspx</DependentUpon>
+    <Compile Include="Books.aspx.cs">
+      <DependentUpon>Books.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Category.aspx.designer.cs">
-      <DependentUpon>Category.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Search.aspx.cs">
-      <DependentUpon>Search.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Search.aspx.designer.cs">
-      <DependentUpon>Search.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ArtMusic.aspx.cs">
-      <DependentUpon>ArtMusic.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ArtMusic.aspx.designer.cs">
-      <DependentUpon>ArtMusic.aspx</DependentUpon>
+    <Compile Include="Books.aspx.designer.cs">
+      <DependentUpon>Books.aspx</DependentUpon>
     </Compile>
     <Compile Include="signup.aspx.cs">
       <DependentUpon>signup.aspx</DependentUpon>
@@ -185,7 +126,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="business.webp" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

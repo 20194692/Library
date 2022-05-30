@@ -1,58 +1,118 @@
-﻿<!DOCTYPE html>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="home.aspx.cs" Inherits="Library.home" %>
 
-<head runat="server">
-    <title>Sign Up to Badreads</title>
-    <link href="style/style.css" rel="stylesheet" />
-</head>
-
-<nav>
-    <ul class="navbar">
-        <li><a href="home.aspx" class="nav-item">Home</a></li>
-        <li><a href="Category.aspx" class="nav-item">Discover</a></li>
-        <li><a href="Search.aspx" class="nav-item">Search</a></li>
-    </ul>
-</nav>
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-
-
-<body>
-    <form id="form1" runat="server">
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            height: 49px;
+        }
+        .auto-style2 {
+            width: 232px;
+        }
+        .auto-style3 {
+            height: 29px;
+        }
+        .auto-style4 {
+            width: 232px;
+            height: 29px;
+        }
+        .auto-style5 {
+            height: 195px;
+        }
+        .auto-style6 {
+            height: 1780px;
+        }
+    </style>
+</head>
+<body style="height: 822px">
+<form id="form1" runat="server">
         <div class="container">
-            <h1 style="padding-bottom: 1em;">Welcome, Nour</h1>
-            <div>
-                <div class="center-div">
-                    <h2>Your Collections</h2>
-                    <div class="center-page">
-                    <div>
-                        <img src="" alt="Images of books purchased by user">
-                        <button class="col-item">Purchased Books</button>
-                    </div> 
-                    <div>
-                        <img src="" alt="Images of books user added to his wishlist">
-                        <button class="col-item">Want To Read</button>
-                    </div> 
-                    <div>
-                        <img src="" alt="Images of books the reader is currently reading">
-                        <button class="col-item">Currently Reading</button>
-                    </div> 
-                    <div>
-                        <img src="" alt="Images of books the user finished">
-                        <button class="col-item">Read</button>
-                    </div> 
-                    </div>
-                </div>
+            <div class="auto-style6" style="background-image: url('books-shelf-old-wooden-73725517.jpg')">                
+                &nbsp;<br />
+                <br />
+                <br />
+                <asp:HyperLink ID="signup1" runat="server" Font-Names="Forte" Font-Size="X-Large" ForeColor="White" NavigateUrl="~/signup.aspx">Signup</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:HyperLink ID="books" runat="server" Font-Names="Forte" Font-Size="X-Large" ForeColor="White" NavigateUrl="~/Books.aspx">Books</asp:HyperLink>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <table class="form-table">
+                                    <tr>
+                                        <td align="center" colspan="2" class="auto-style1">
+                                            <h1 class="form-title" style="background-color: #FFFFFF">WELCOME</h1>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right" class="auto-style3" style="background-color: #FFFFFF">
+                                            First Name:</td>
+                                        <td class="auto-style4" style="background-color: #FFFFFF">
+                                            <asp:TextBox ID="fnameEdit" runat="server" Enabled="False"></asp:TextBox>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right" class="auto-style3" style="background-color: #FFFFFF">
+                                            Last Name:</td>
+                                        <td class="auto-style4" style="background-color: #FFFFFF">
+                                            <asp:TextBox ID="lnameEdit" runat="server" Enabled="False"></asp:TextBox>
+                                        </td>
+
+                                    </tr>
+                    <tr>
+                         <td align="right" class="auto-style3" style="background-color: #FFFFFF">
+                             Username:</td>
+                         <td class="auto-style4" style="background-color: #FFFFFF">
+                             
+                             <asp:TextBox ID="usernameEdit" runat="server" Enabled="False"></asp:TextBox>
+                             
+                         </td>
+                    </tr>
+                    <tr>
+                        <td align ="right" style="background-color: #FFFFFF">
+
+                            Email:</td>
+                        <td class="auto-style2" style="background-color: #FFFFFF">
+
+                             <asp:TextBox ID="emailEdit" runat="server" Enabled="False"></asp:TextBox>
+                             
+                            </td>
+
+                    </tr>
+                                    <tr>
+                                        <td align="right" style="background-color: #FFFFFF">
+                                            Password:</td>
+                                        <td class="auto-style2" style="background-color: #FFFFFF">
+                             
+                             <asp:TextBox ID="passwordEdit" runat="server" Enabled="False"></asp:TextBox>
+                             
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right">
+                                            <asp:Button ID="edit" runat="server" Text="Edit" OnClick="edit_Click" />
+                                        </td>
+                                        <td class="auto-style2">
+                                            <asp:Button ID="save" runat="server" OnClick="save_Click" Text="Save" Visible="False" />
+                                        </td>
+                                    </tr>
+                                </table>
             </div>
-            <div>
-                <h2>Your Categories</h2>
-                <div class="center-page">
-                    <ul class="cat-item">
-                        <li><a href="#">Business</a></li>
-                        <li><a href="#">Art & Music</a></li>
-                        <li><a href="#">Biographies</a></li>
-                        <li><a href="#">Comics</a></li>
-                    </ul>
-                </div>
+            <div class="auto-style5">  
             </div>
         </div>
     </form>

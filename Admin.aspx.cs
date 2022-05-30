@@ -15,23 +15,15 @@ namespace Library
 
         }
 
-        protected void CreateUserWizard1_CreatedUser(object sender, EventArgs e)
-        {
-
-        }
-
         protected void bookAdd_Click(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection();
-
-            conn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|Cate.mdf;Integrated Security=True";
-
-            string strInsert = string.Format("INSERT INTO ArtMusic VALUES('{0}','{1}')",price.Text, bookName.Text);
-
-            SqlCommand cmd = new SqlCommand(strInsert, conn);
+            conn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|booklist.mdf;Integrated Security=True";
+            string strInsert = string.Format("INSERT INTO books VALUES ('{0}','{1}','{2}','{3}','{4}')", bookName.Text, price.Text, author.Text, image.FileContent, category.SelectedValue);
+            SqlCommand cmdInsert = new SqlCommand(strInsert, conn);
 
             conn.Open();
-            cmd.ExecuteNonQuery();
+            cmdInsert.ExecuteNonQuery();
             conn.Close();
         }
     }
