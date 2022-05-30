@@ -71,11 +71,11 @@ namespace Library
             string username = "";
             username = (string)ViewState["U"];
 
-            string strUpdate = "Update member "
+            string strUpdate = "UPDATE TABLE member "
                 + " SET Fname = '" + fnameEdit.Text + "', "
-                + " Lname = '" + lnameEdit.Text + "', "
-                +  "', "+ " pass = '" + passwordEdit.Text + "', "
-                + " WHERE userName = '" + username + "'";
+                + "Lname = '" + lnameEdit.Text + "', "
+                +  "', "+ "pass = '" + passwordEdit.Text + "', "
+                + "'WHERE userName = '" + username + "'";
 
             SqlCommand cmdUpdate = new SqlCommand(strUpdate, conn);
 

@@ -48,7 +48,7 @@
         <br />
         <br />
         <br />
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="bookName" DataSourceID="SqlDataSource1" OnRowCommand ="gvIngevuld_RowCommand" BackColor="White">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="bookName" DataSourceID="SqlDataSource1" ForeColor="White">
             <Columns>
                 <asp:BoundField DataField="bookName" HeaderText="bookName" ReadOnly="True" SortExpression="bookName" />
                 <asp:BoundField DataField="price" HeaderText="price" SortExpression="price" />

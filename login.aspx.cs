@@ -36,8 +36,8 @@ namespace Library
 
             if (reader.Read())
             {
-                if (loginusername.Text == "admin2021")
-                    Response.Redirect("~/Admin.aspx");
+                if (loginusername.Text == "admin" && password.Text == "admin2022")
+                    Response.Redirect("Admin.aspx");
                 else
                     Response.Redirect("~/home.aspx");
             }
